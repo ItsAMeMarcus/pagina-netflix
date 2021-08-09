@@ -4,35 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- owl css -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
     <title>Netflix</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Filmes</a>
-                <a href="#">Séries</a>
-                <a href="#">Documentários</a>
-                <a href="#">Minha Lista</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="filme-principal">
+    <section>
+        <header>
             <div class="container">
-                <div class="container"></div>
-                <h3 class="titulo">HOUSE OF CARDS</h3>
-                <p class="descricao">Nada pode impedir o politico sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
+                <a href="index.html"><img src="imagens/netflix-logo-1.png" alt="netflix-logo" class="netflix-logo"></a>
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Documentários</a>
+                    <a href="#">Minha Lista</a>
+                </nav>
             </div>
-            <div class="botoes">
-                <button role="button" class="botao">ASSISTA AGORA</button>
-                <button role="button" class="botao">MAIS INFORMAÇÕES</button>
+        </header>
+        <main>
+            <div class="filme-principal">
+                <div class="container">
+                    <img src="imagens/House-of-cards-white.png" alt="house-of-cards-logo">
+                    <h3 class="titulo">Nova temporada já disponivel</h3>
+                    <p class="descricao">
+                        Nada pode impedir o politico sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.
+                    </p>
+                    <div class="botoes">
+                        <a href="#"><button role="button" class="botao"><i class="fas fa-play"></i>
+                            Assistir
+                        </button></a>
+                        <a href="#"><button role="button" class="botao"><i class="fas fa-info-circle"></i>
+                            Mais Informações
+                        </button></a>
+                </div>
             </div>
+        </main>
+    </section>
+
+    <div class="carrosel-filmes">
+        <h3 class="minha-lista">
+            Minha lista
+        </h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <a href="#"><img src="imagens/mini01.jpg" alt="miniatura" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="imagens/mini02.jpg" alt="miniatura" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="imagens/mini03.jpg" alt="miniatura" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="imagens/mini04.jpg" alt="miniatura" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="imagens/mini05.jpg" alt="miniatura" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="imagens/mini06.jpg" alt="miniatura" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="imagens/mini07.jpg" alt="miniatura" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="imagens/mini08.jpg" alt="miniatura" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="imagens/mini09.jpg" alt="miniatura" class="box-filme"></a>
+            </div>
+            <div class="item">
+                <a href="#"><img src="imagens/mini10.jpg" alt="miniatura" class="box-filme"></a>
+            </div>            
         </div>
-    </main>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/27bccc2154.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/setup.js"></script>
 </body>
 </html>
