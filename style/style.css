@@ -1,3 +1,4 @@
+/* elementos base */
 :root{
     --vermelho:#e50914;
     --preta:#141414;
@@ -9,7 +10,7 @@
     box-sizing: border-box;
 }
 
-/* elementos base */
+
 
 body {
     background: var(--preta);
@@ -17,9 +18,13 @@ body {
     color: white;
 }
 
+/* navbar  */
+
 div .netflix-logo{
-    width: 25%;
-    margin: 1%;
+    display: flex;
+    width: 125px;
+    height: 100%;
+    margin: 10% 33px;
 }
 
 header nav a{
@@ -29,14 +34,19 @@ header nav a{
 }
 
 header nav a:hover{
-    color: #fff;
+    color: rgb(116, 116, 116);
+    transition: 0.5s;
 }
 
-header div{
+.container-header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:flex-start;
     align-items: center;
+    background:linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0)); 
+    z-index: 0;
+    position: relative;
+    width: 100%;
 }
 
 /* filme principal */
@@ -51,19 +61,27 @@ header div{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    z-index: -1;
+    position: relative;
+    top: -80px;
 }
 
-.container{
+.container-main{
+    text-shadow: rgb(0, 0, 0) 2px 3px 8px;;
+    width: 50%;
     margin-left: 40px;
+    z-index: 0;
+    position: relative;
 }
 
-.filme-principal .container{
+.filme-principal .container-main{
     width: 60%;
 }
 
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
+    font-size: 20px;
 }
 
 .titulo{
@@ -93,6 +111,8 @@ header div{
 .botao i{
     margin-right: 10px;
 }
+
+/* carrosel  */
 
 .minha-lista{
     margin: 1%;
